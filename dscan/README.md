@@ -1,4 +1,50 @@
-               _                     
+# ABOUT Dscan :
+ it's a simple port scanner & network discovery tool , built it to test my ability in network programming . 
+
+
+# Dependencies:
+Dscan depends on the scapy , optparse , pyfilet , termcolor ,colorama python modules. 
+### install requirements:
+
+```
+$ sudo pip install -r requirements.txt
+```
+### install optparse module:
+
+```
+$ sudo pip install optparse
+$ sudo apt-get install python-optparse
+```
+### install scapy module:
+
+```
+$ sudo pip install scapy
+$ sudo apt-get install python-scapy
+```
+### install pyfiglet module:
+
+```
+$ sudo pip install pyfiglet
+$ sudo apt-get install python-pyfiglet
+```   
+
+### install termcolor module:
+
+```
+$ sudo pip install termcolor
+$ sudo apt-get install python-termcolor
+```   
+
+### install colorama module:
+
+```
+$ sudo pip install colorama
+$ sudo apt-get install python-colorama
+```   
+
+
+
+           _                     
             __| |___  ___ __ _ _ __  
            / _` / __|/ __/ _` | '_ \ 
           | (_| \__ \ (_| (_| | | | |

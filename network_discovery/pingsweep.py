@@ -1,7 +1,17 @@
 import optparse
 import time
-import pyfiglet , termcolor , colorama
+import sys
+import pyfiglet , termcolor 
 import  scapy.all as scapy
+
+# Check if we are running this on windows platform
+is_windows = sys.platform.startswith('win')
+if is_windows:
+    import colorama
+
+    colorama.init()  # windows deserve coloring too xd
+
+
 
 def get_arguments() :
     parser = optparse.OptionParser(usage="pingsweep.py [option] {target}", version=1.0 ,epilog='Ex : pingsweep.py -t 192.168.1.0/24')
@@ -37,7 +47,6 @@ def print_result(results_lists):
 
 def main () :
         banner = pyfiglet.figlet_format("ping sweep")
-        colorama.init()
         print(termcolor.colored(banner , color='red'))
         options = get_arguments()
         hosts = options.target

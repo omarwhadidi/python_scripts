@@ -1,5 +1,7 @@
 scapy
 optparse
-termcolor
+time
 pyfiglet
-colorama
+termcolor
+sys
+

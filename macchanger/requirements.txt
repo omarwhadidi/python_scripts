@@ -1,0 +1,7 @@
+termcolor
+pyfiglet
+subprocess
+argparse
+re 
+random
+sys
